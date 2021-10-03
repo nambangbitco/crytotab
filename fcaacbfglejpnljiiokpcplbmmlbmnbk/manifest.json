@@ -1,0 +1,27 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "icons/icon_default.png",
+      "default_title": "CryptoTab"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval';object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_ext_description__",
+   "externally_connectable": {
+      "matches": [ "*://getcryptotab.com/*" ]
+   },
+   "icons": {
+      "128": "icons/icon-128px.png",
+      "16": "icons/icon-16px.png",
+      "256": "icons/icon-256px.png",
+      "32": "icons/icon-32px.png",
+      "48": "icons/icon-96px.png"
+   },
+   "manifest_version": 2,
+   "name": "CryptoTab",
+   "permissions": [ "storage", "activeTab", "\u003Call_urls>", "tabs", "contextMenus", "management", "notifications", "webRequest", "webRequestBlocking" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5.0"
+}

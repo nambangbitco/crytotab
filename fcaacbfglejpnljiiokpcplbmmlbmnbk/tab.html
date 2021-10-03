@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CryptoTab</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+</head>
+<body id="body" class="page">
+    <div class="ct-cap-loader show" id="loader">
+        <div class="ct-logo-loader"><img src="images/logo.png" srcset="images/logo@2x.png 2x" alt=""></div>
+        <div class="spinner">
+            <div class="spinner__item1"></div>
+            <div class="spinner__item2"></div>
+            <div class="spinner__item3"></div>
+            <div class="spinner__item4"></div>
+        </div>
+    </div>
+    
+    <div class="coins">
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+    </div>
+
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" srcset="images/logo@2x.png 2x" />
+        </div>
+        <div class="header__right-side">
+            <div class="alert alert_blocked show" id="errorMessage" style="display: none;"><span data-i18n="blocked_alert"></span> <span class="alert__hide" ></span></div>
+            <a class="item" href="https://cryptotab.net/boost/">
+                <i class="icon-share"></i>
+            </a>
+            <div class="item item-notifications showPopup" data-popup="ratePopup">
+                <i class="icon-notifications"><span>1</span></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <div class="balance-details dropdown" id="balance">
+            <div class="section">
+                <h3 class="section__title left" data-i18n="balance"></h3>
+                <div class="stats">
+                    <div class="stats__row">
+                        <div class="label" data-i18n="total"></div>
+                        <div class="stats__value big"><span class="totalBTC"></span> BTC
+                            <div class="stats__approx"><span data-i18n="approx"></span> <b>$<span class="totalUSD"></span></b></div>
+                        </div>
+                    </div>
+                    <div class="stats__row">
+                        <div class="label" data-i18n="mined"></div>
+                        <div class="stats__value"><span class="minedBTC"></span> BTC
+                            <div class="stats__approx"><span data-i18n="approx"></span> <b>$<span class="minedUSD"></span></b></div>
+                        </div>
+                    </div>
+                    <div class="stats__row">
+                        <div class="label"><span data-i18n="affiliate"></span><a href="https://cryptotab.net/referrals/" target="_blank" class="people referred"></a></div>
+                        <div class="stats__value"><span class="affiliateBTC"></span> BTC
+                            <div class="stats__approx"><span data-i18n="approx"></span> <b>$<span class="affiliateUSD"></span></b></div>
+                        </div>
+                    </div>
+                </div><button class="btn btn_withdraw" type="button" data-i18n="withdraw"></button></div>
+            <div class="section" id="speedSection">
+                <h3 class="section__title small"><span class="label" data-i18n="speed"></span> <span class="hps"></span> H/s</h3>
+                <div class="range range_sidebar">
+                    <div class="range__btns">
+                        <div class="range__btn setSpeed" data-speed="0" data-i18n="off"></div>
+                        <input type="range" value="0" min="0" max="100" step="1" />
+                        <div class="range__btn setSpeed" data-speed="100" data-i18n="max"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3 class="section__title" data-i18n="multiplier_title"></h3>
+                <p><span data-i18n="multiplier_desc"></span> <a href="https://cryptotab.net/referrals/" target="_blank" data-i18n="more"></a></p>
+                <div class="speedbox">
+                    <div class="speedbox__score" id="speedbox-score"></div>
+                    <div class="speedbox__groove"></div>
+                    <div class="speedbox__base"></div>
+                    <div class="speedbox__pointer"></div>
+                </div><button class="btn btn_boost" type="button" data-i18n="get_boost"></button>
+                <p class="reffered">
+                    <span data-i18n="referrals"></span> <a class="people" href="https://cryptotab.net/referrals/" target="_blank"><span class="referred"></span> <span data-i18n="users"></span></a>
+                    <span class="rank"></span>
+                </p>
+                <div class="refurl"><input type="text" id="refurl" readonly=""><button type="button" class="copyRefUrl" data-i18n="copy"></button></div>
+                <div class="social-btns">
+                    <a href="https://cryptotab.net/sharing/?t=fb" class="social-btn social-btn_fb"></a>
+                    <a href="https://cryptotab.net/sharing/?t=tw" class="social-btn social-btn_tw"></a>
+                    <a href="https://cryptotab.net/sharing/?t=gp" class="social-btn social-btn_gplus"></a>
+                    <a href="https://cryptotab.net/sharing/?t=vk" class="social-btn social-btn_vk"></a>
+                    <a class="social-btn social-btn_mail"></a>
+                </div>
+            </div>
+            <div class="section section_login">
+                <p><span data-i18n="mining_desc"></span> <span data-i18n="login_desc" id="login_desc"></span></p>
+                <div class="section__footer">
+                    <div class="section__footer-left"><span class="login" id="email"></span></div>
+                    <div class="section__footer-right">
+                        <a href="https://cryptotab.net/login/" target="_blank" class="btn btn_link blue" id="login" data-i18n="login"></a>
+                        <a href="https://cryptotab.net/settings/" target="_blank" class="btn btn_link blue" id="settings" data-i18n="settings"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="section section_checkboxes">
+                <div class="checkbox">
+                    <input type="checkbox" id="bgAnimation"><label for="bgAnimation" data-i18n="bg_animation"></label>
+                </div>
+            </div>
+            <div class="section section_links">
+                <ul>
+                    <li class="showPopup" data-popup="ratePopup" data-i18n="rate"></li>
+                    <li><a href="https://cryptotab.net/" data-i18n="about"></a></li>
+                    <li><a href="https://cryptotab.net/feedback/" data-i18n="contact"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="item item_burger toggleDropdown" data-dropdown="balance">
+            <i class="icon-burger"></i>
+        </div>
+    </div>
+    <div class="tip tip_4" data-tip="4">
+        <div class="tip__body" data-i18n="tip_4"></div>
+        <div class="tip__footer">
+            <div class="tip__num">4 / 6</div>
+            <div class="tip__btns">
+                <span class="btn btn_link black skipTip" data-i18n="skip"></span>
+                <span class="btn btn_link blue nextTip" data-i18n="next_tip"></span>
+            </div>
+        </div>
+    </div>
+    <section class="main" id="board">
+        <div class="main__top">
+            <div class="banner banner_top">
+                <span class="banner__cancel"></span>
+                <iframe></iframe>
+            </div>
+        </div>
+        <div class="main__middle">
+            <div class="balance">
+                <div class="balance__first-line">
+                    <span class="balance__icon" data-animation-speed="off"></span>
+                    <span class="balance__satoshi"></span><span class="balance__animated"></span><div class="tooltip"><i></i><span data-i18n="tooltip_4dig"></span></div>&nbsp;BTC
+                </div>
+                <div class="balance__second-line">
+                    <span class="balance__approx"><span data-i18n="approx"></span> <b>$</b><b class="totalUSD"></b> <i>(1 BTC &#8776; $<span id="BTC2USD"></span>)</i></span>
+                    <span id="minedOFF" class="balance__mining"><span data-i18n="mining"></span> <b data-i18n="off"></b></span>
+                    <a href="https://cryptotab.net/boost/" target="_blank" class="balance__message hidden" data-i18n="refer_new"></a>
+                </div>
+                <div class="tip tip_1" data-tip="1">
+                    <div class="tip__body" data-i18n="tip_1"></div>
+                    <div class="tip__footer">
+                        <div class="tip__num">1 / 6</div>
+                        <div class="tip__btns">
+                            <span class="btn btn_link black skipTip" data-i18n="skip"></span>
+                            <span class="btn btn_link blue nextTip" data-i18n="next_tip"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__bottom">
+            <div class="bottom">
+                <div class="tip tip_3" data-tip="3">
+                    <div class="tip__body" data-i18n="tip_3"></div>
+                    <div class="tip__footer">
+                        <div class="tip__num">3 / 6</div>
+                        <div class="tip__btns">
+                            <span class="btn btn_link black skipTip" data-i18n="skip"></span>
+                            <span class="btn btn_link blue nextTip" data-i18n="next_tip"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner banner_bottom">
+                    <span class="banner__cancel"></span>
+                    <iframe></iframe>
+                </div>
+                <div class="slider">
+                    <div class="slider__dots">
+                        <div class="dot active" data-slide="1"></div>
+                        <div class="dot" data-slide="2"></div>
+                        <div class="dot" data-slide="3"></div>
+                    </div>
+                    <a class="slider__items" href="https://cryptotab.net/boost/">
+                        <div class="slide active" data-i18n="slide_1"></div>
+                        <div class="slide" data-i18n="slide_2"></div>
+                        <div class="slide" data-i18n="slide_3"></div>
+                    </a>
+                </div>
+                <div class="refblock">
+                    <div class="refurl"><input type="text" readonly=""><button type="button" class="copyRefUrl" data-i18n="copy"></button></div>
+                    <div class="social-btns">
+                        <a href="https://cryptotab.net/sharing/?t=fb" class="social-btn social-btn_fb"></a>
+                        <a href="https://cryptotab.net/sharing/?t=tw" class="social-btn social-btn_tw"></a>
+                        <a href="https://cryptotab.net/sharing/?t=gp" class="social-btn social-btn_gplus"></a>
+                        <a href="https://cryptotab.net/sharing/?t=vk" class="social-btn social-btn_vk"></a>
+                        <a class="social-btn social-btn_mail"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__section footer__section_speed">
+            <div>
+                <div class="tip tip_2" data-tip="2">
+                    <div class="tip__body" data-i18n="tip_2"></div>
+                    <div class="tip__footer">
+                        <div class="tip__num">2 / 6</div>
+                        <div class="tip__btns">
+                            <span class="btn btn_link black skipTip" data-i18n="skip">Skip</span>
+                            <span class="btn btn_link blue nextTip" data-i18n="next_tip"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="label" data-i18n="mining"></div>
+                <div class="range">
+                    <input type="range" value="0" min="0" max="100" step="1" />
+                    <div class="range__btns">
+                        <div class="range__btn setSpeed" data-speed="0" data-i18n="off"></div>
+                        <div class="range__btn setSpeed" data-speed="100" data-i18n="max"></div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn_restart"><span data-i18n="restart"></span></button>
+            </div>
+            <div>
+                <div class="footer__speed">
+                    <span class="hps">0.0000000000</span>&nbsp;H/s
+                    <div class="btn btn_boost" target="_blank"><span data-i18n="get_boost"></span><span class="count hidden">1</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__section">
+            <div>
+                <div class="label" data-i18n="mined"></div>
+                <div class="stats__value"><span class="minedBTC">0.000000000000</span>&nbsp;BTC
+                    <div class="stats__approx"><span data-i18n="approx"></span> <b>$<span class="minedUSD">0.000</span></b></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__section footer__section_aff">
+            <div>
+                <div class="label" data-i18n="affiliate"></div>
+                <div class="stats__value"><span class="affiliateBTC">0.000000000000</span>&nbsp;BTC
+                    <div class="stats__approx"><span data-i18n="approx"></span> <b>$<span class="affiliateUSD">0.000</span></b></div>
+                </div>
+            </div>
+        </div>
+        <a class="footer__section footer__section_ref" href="https://cryptotab.net/referrals/">
+            <div>
+                <div class="label" data-i18n="referrals"></div>
+                <div class="row">
+                    <div class="referrals">
+                        <span class="referred">0</span>&nbsp;<span data-i18n="users"></span>
+                        <span id="newReferrals" class="referrals__new">+1</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="tip tip_5" data-tip="5">
+            <div class="tip__body" data-i18n="tip_5"></div>
+            <div class="tip__footer">
+                <div class="tip__num">5 / 6</div>
+                <div class="tip__btns">
+                    <span class="btn btn_link black skipTip" data-i18n="skip"></span>
+                    <span class="btn btn_link blue nextTip" data-i18n="next_tip"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup" id="ratePopup">
+        <div class="popup__handler">
+            <h2 data-i18n="rate_title"></h2>
+            <div class="top">
+                <div class="stars-holder">
+                    <i class="active" data-rate="1"></i>
+                    <i class="active" data-rate="2"></i>
+                    <i class="active" data-rate="3"></i>
+                    <i class="active" data-rate="4"></i>
+                    <i data-rate="5"></i>
+                </div>
+            </div>
+            <p data-i18n="rate_desc"></p>
+            <div class="popup__footer">
+                <span class="btn btn_link hidePopup" data-i18n="dismiss"></span>
+                <span class="btn btn_link blue" data-rate="4" id="rateBtn" data-i18n="rate"></span>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="blockedPopup">
+        <div class="popup__handler">
+            <h2 data-i18n="blocked_title"></h2>
+            <div class="popup__body" data-i18n="blocked_desc"></div>
+            <div class="popup__footer">
+                <span class="btn btn_link blue hidePopup">Ok</span>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="thanksPopup">
+        <div class="popup__handler">
+            <h2 data-i18n="feedback_title"></h2>
+            <p><span data-i18n="feedback_desc"></span> <a href="mailto:support@cryptotab.net">support@cryptotab.net</a></p>
+            <div class="popup__footer">
+                <span class="btn btn_link hidePopup" data-i18n="close"></span>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="loginPopup">
+        <div class="popup__handler">
+            <h2 data-i18n="login_popup_title"></h2>
+            <div data-i18n="login_popup_desc"></div>
+            <div class="popup__footer">
+                <span class="btn btn_link hidePopup" data-i18n="close"></span>
+                <a href="https://cryptotab.net/login/" class="btn btn_link blue" data-i18n="login"></a>
+            </div>
+        </div>
+    </div>
+    <div class="tip tip_6" data-tip="6">
+        <div class="tip__body" data-i18n="tip_6"></div>
+        <div class="tip__footer">
+            <div class="tip__num">6 / 6</div>
+            <div class="tip__btns">
+                <span class="btn btn_link blue skipTip" data-i18n="done"></span>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    
+    <script type="text/javascript" src="js/cryptotab_lib.js"></script>
+    <script type="text/javascript" src="js/i18n.js"></script>
+    <script type="text/javascript" src="js/range-slider.js"></script>
+    <script type="text/javascript" src="js/odometer.js"></script>
+    <script type="text/javascript" src="js/crypto.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

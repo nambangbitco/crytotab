@@ -1,0 +1,239 @@
+{
+   "about": {
+      "message": "Über"
+   },
+   "affiliate": {
+      "message": "Partner:"
+   },
+   "approx": {
+      "message": "Ca."
+   },
+   "balance": {
+      "message": "Bilanz"
+   },
+   "bg_animation": {
+      "message": "Hintergrundanimation anzeigen"
+   },
+   "blocked_alert": {
+      "message": "Bergbau ist blockiert. Überprüfen Sie Ihre Sicherheitssystemeinstellungen."
+   },
+   "blocked_desc": {
+      "message": "\u003Cp>Einige Sicherheitssysteme können CryptoTab-Arbeit blockieren.\u003C/p>\u003Cp>Sie müssen das Skript entsperren, um mit dem Mining zu beginnen und Geld zu verdienen. Bitte überprüfen Sie Ihre Sicherheitssystemeinstellungen, um mit dem Mining zu beginnen.\u003C/p>"
+   },
+   "blocked_title": {
+      "message": "Bergbau ist blockiert"
+   },
+   "close": {
+      "message": "Schließen"
+   },
+   "contact": {
+      "message": "Kontaktieren Sie uns"
+   },
+   "contextMenus_high": {
+      "message": "Hohe CPU-Nutzung"
+   },
+   "contextMenus_low": {
+      "message": "Niedrige CPU-Nutzung"
+   },
+   "contextMenus_normal": {
+      "message": "Mittlere CPU-Nutzung"
+   },
+   "contextMenus_off": {
+      "message": "Ausschalten"
+   },
+   "copied": {
+      "message": "Kopiert!"
+   },
+   "copy": {
+      "message": "Kopieren Sie Url"
+   },
+   "dismiss": {
+      "message": "Entlassen"
+   },
+   "done": {
+      "message": "Fertig"
+   },
+   "ext_description": {
+      "message": "Verschaffen Sie sich Zugang zu CryptoTab"
+   },
+   "feedback_desc": {
+      "message": "Wir werden versuchen, CryptoTab besser zu machen. Wenn Sie Vorschläge zur Verbesserung dieser Erweiterung haben, kontaktieren Sie uns bitte unter"
+   },
+   "feedback_title": {
+      "message": "Vielen Dank für Ihr Feedback!"
+   },
+   "get_boost": {
+      "message": "Boost bekommen"
+   },
+   "hide": {
+      "message": "Ausblenden"
+   },
+   "high": {
+      "message": "Hoch"
+   },
+   "lang_code": {
+      "message": "de"
+   },
+   "login": {
+      "message": "Melden Sie an"
+   },
+   "login_desc": {
+      "message": "Um Ihre BTC und die Empfehlungsliste zu speichern, müssen Sie sich anmelden."
+   },
+   "login_popup_desc": {
+      "message": "\u003Cp>Wir empfehlen Ihnen, auf Anmelden zu klicken und sich nach der Installation des Plugins in Ihrem Facebook- oder Google-Konto anzumelden. Es speichert automatisch Ihr Bitcoin-Konto und Ihr Empfehlungsnetzwerk.\u003C/p>\u003Cp>Um Ihr Konto auf einem neuen Gerät wiederherzustellen, müssen Sie CryptoTab herunterladen, auf Login drücken und sich mit Ihrem Facebook- oder Google-Konto anmelden.\u003C/p>"
+   },
+   "login_popup_title": {
+      "message": "Bitte loggen Sie sich ein, um Ihre Einnahmen zu speichern"
+   },
+   "low": {
+      "message": "Niedrig"
+   },
+   "mail_sharing_text": {
+      "message": "Hallo! Kennen Sie bereits die CryptoTab Erweiterung für Google Chrome? Jetzt können Sie Bitcoins verdienen, während Sie nur den Browser verwenden. Holen Sie mehr als 1 BTC pro Monat, wirklich! Überprüfen Sie weitere Details unter dieser URL und Sie werden mir später sicher danken -"
+   },
+   "mail_sharing_title": {
+      "message": "Erhalten Sie Bitcoins während der Nutzung von Google Chrome"
+   },
+   "max": {
+      "message": "Max"
+   },
+   "mined": {
+      "message": "Geschürft:"
+   },
+   "mining": {
+      "message": "Bergbau:"
+   },
+   "mining_desc": {
+      "message": "Google Chrome muss geöffnet werden, um Bitcoin zu schürfen. Sie können dieses Fenster jedoch schließen und Sie werden weiterhin schürfen."
+   },
+   "more": {
+      "message": "Weitere Informationen"
+   },
+   "multiplier_desc": {
+      "message": "Laden Sie Leute über persönlicher URL ein und verdienen Sie ein zusätzliches % von Bitcoins, die sie schürfen. Je mehr Ihr Netzwerk wächst, desto mehr gewinnen Sie."
+   },
+   "multiplier_title": {
+      "message": "Ergebnismultiplikator"
+   },
+   "network_desc": {
+      "message": "\u003Cp>Um Cryptotab richtig zu gebrauchen(benutzen), müssen Sie Verbindung zum Internet haben.\u003C/p>\u003Cp>Prüfen Sie Ihre Netzwerk-Einstellungen nach und fangen Sie die Datenbanksuchroutine wiederan.\u003C/p>"
+   },
+   "network_title": {
+      "message": "Prüfen Sie Ihre Internetverbindung nach"
+   },
+   "next_tip": {
+      "message": "Nächster"
+   },
+   "normal": {
+      "message": "Normal"
+   },
+   "off": {
+      "message": "Aus"
+   },
+   "rank_bigboss": {
+      "message": "Großer Boss"
+   },
+   "rank_expert": {
+      "message": "Expert"
+   },
+   "rank_legend": {
+      "message": "Legende"
+   },
+   "rank_master": {
+      "message": "Meister"
+   },
+   "rank_newbie": {
+      "message": "Neuling"
+   },
+   "rank_pro": {
+      "message": "Pro"
+   },
+   "rank_rookie": {
+      "message": "Anfänger"
+   },
+   "rank_veteran": {
+      "message": "Veteran"
+   },
+   "rate": {
+      "message": "Bewerten Sie uns"
+   },
+   "rate_desc": {
+      "message": "Wenn Sie mit CryptoTab zufrieden sind, hinterlassen Sie ein positives Feedback auf der Chrome Web Store Seite."
+   },
+   "rate_title": {
+      "message": "Wie gefällt Ihnen CryptoTab?"
+   },
+   "refer_new": {
+      "message": "Sie neue Nutzer und verdienen Sie viel mehr!"
+   },
+   "referrals": {
+      "message": "Empfehlungen:"
+   },
+   "restart": {
+      "message": "Neustart"
+   },
+   "settings": {
+      "message": "Einstellungen"
+   },
+   "skip": {
+      "message": "Überspringen"
+   },
+   "slide_1": {
+      "message": "\u003Cspan>Laden Sie aktive Freunde ein, die ihre Freunde einladen werden - und fangen Sie an, echtes Geld zu verdienen!&nbsp;\u003Cb>Verdienen Sie mehr als 1 BTC pro Monat!\u003C/b>\u003C/span>"
+   },
+   "slide_2": {
+      "message": "Investieren Sie Ihre Zeit und Mühe, indem Sie neue Benutzer einladen, und Sie werden ein hohes passives Einkommen für sich selbst für lange Zeit garantieren."
+   },
+   "slide_3": {
+      "message": "Sie erhalten immer Bonusse für Ihre Freunde und deren Freunde, die dann CryptoTab verwenden!"
+   },
+   "speed": {
+      "message": "Bergbaugeschwindigkeit:"
+   },
+   "tip_1": {
+      "message": "Dies ist Ihre aktuelle BTC Bilanz mit der Aktualisierungsrate für etwa 10 Minuten."
+   },
+   "tip_2": {
+      "message": "Passen Sie hier Ihre Bergbaugeschwindigkeit an oder schalten Sie sie jederzeit aus."
+   },
+   "tip_3": {
+      "message": "Laden Sie neue Benutzer unter Ihren persönlichen Link ein und steigern Sie Ihr Bitcoin Einkommen schnell."
+   },
+   "tip_4": {
+      "message": "Loggen Sie sich ein, nehmen Sie Ihre BTC zurück, passen Sie die Einstellungen und mehr von der Seitenwand an."
+   },
+   "tip_5": {
+      "message": "Überprüfen Sie, wie groß Ihr Netzwerk mit Beziehungen ist und laden Sie neue Nutzer ein, um Ihre Einnahmen zu steigern. Wir empfehlen Ihnen, sich mit Ihrem Google- oder Facebook-Konto anzumelden, um Daten zu speichern."
+   },
+   "tip_6": {
+      "message": "Drücken Sie das CryptoTab-Symbol in der Erweiterungsleiste, um den Mining-Bildschirm zu öffnen."
+   },
+   "tooltip_4dig": {
+      "message": "Wir fügen dem Bitcoin-Betrag 4 weitere Ziffern hinzu, damit Sie den Fortschritt bei den Einnahmen sehen können."
+   },
+   "total": {
+      "message": "Gesamt:"
+   },
+   "users": {
+      "message": "Benutzer"
+   },
+   "withdraw": {
+      "message": "BTC abheben"
+  },
+  "no_connection_title": {
+     "message": "Es scheint, dass Sie keine Internetverbindung haben"
+  },
+  "no_connection_text": {
+     "message": "Bitte verbinden Sie sich mit dem Internet, um Zugriff auf die CryptoTab-Mining-Funktionen und Ihr Konto zu bekommen."
+  },
+  "unavailable_title": {
+     "message": "CryptoTab derzeit nicht verfügbar"
+  },
+  "unavailable_title_text": {
+     "message": "Wir entschuldigen uns für die Unannehmlichkeiten, wir führen einige Wartungsarbeiten auf unserem vorgelagerten Back-End-Cluster durch. Bitte versuchen Sie später, sich mit CryptoTab zu verbinden."
+  },
+  "offline": {
+     "message": "Offline"
+  }
+}

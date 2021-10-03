@@ -1,0 +1,239 @@
+{
+   "about": {
+      "message": "About"
+   },
+   "affiliate": {
+      "message": "Affiliate:"
+   },
+   "approx": {
+      "message": "Approx."
+   },
+   "balance": {
+      "message": "Balance"
+   },
+   "bg_animation": {
+      "message": "Show background animation"
+   },
+   "blocked_alert": {
+      "message": "Mining is blocked. Check your security system settings."
+   },
+   "blocked_desc": {
+      "message": "\u003Cp>Some security systems can block CryptoTab work.\u003C/p>\u003Cp>You need to unlock the script to start mining and earn money. Please, check your security system settings to start mining.\u003C/p>"
+   },
+   "blocked_title": {
+      "message": "Mining is blocked"
+   },
+   "close": {
+      "message": "Close"
+   },
+   "contact": {
+      "message": "Contact Us"
+   },
+   "contextMenus_high": {
+      "message": "High CPU Usage"
+   },
+   "contextMenus_low": {
+      "message": "Low CPU Usage"
+   },
+   "contextMenus_normal": {
+      "message": "Medium CPU Usage"
+   },
+   "contextMenus_off": {
+      "message": "Turn Off"
+   },
+   "copied": {
+      "message": "Copied!"
+   },
+   "copy": {
+      "message": "Copy Url"
+   },
+   "dismiss": {
+      "message": "Dismiss"
+   },
+   "done": {
+      "message": "Done"
+   },
+   "ext_description": {
+      "message": "Get access to CryptoTab"
+   },
+   "feedback_desc": {
+      "message": "We will try to make CryptoTab better. If you have any suggestions how to improve this extension please contact us at"
+   },
+   "feedback_title": {
+      "message": "Thanks for your feedback!"
+   },
+   "get_boost": {
+      "message": "Get Boost"
+   },
+   "hide": {
+      "message": "Hide"
+   },
+   "high": {
+      "message": "High"
+   },
+   "lang_code": {
+      "message": "en"
+   },
+   "login": {
+      "message": "Log In"
+   },
+   "login_desc": {
+      "message": "To save your BTC and list of referrers you need to sign in."
+   },
+   "login_popup_desc": {
+      "message": "\u003Cp>We recommend you to press Login and sign in your Facebook or Google account after the plugin installation. It will automatically save your Bitcoin balance and referral network.\u003C/p>\u003Cp>To restore your account on a new device, you need to download CryptoTab, press Login and sign in with your Facebook or Google account.\u003C/p>"
+   },
+   "login_popup_title": {
+      "message": "Please login to save your earnings"
+   },
+   "low": {
+      "message": "Low"
+   },
+   "mail_sharing_text": {
+      "message": "Hi there! Do you already know about CryptoTab extension for Google Chrome? Now you can earn Bitcoins while just using the browser. Get more than 1 BTC per month, really! Check more details by this url and you will thank me later, for sure -"
+   },
+   "mail_sharing_title": {
+      "message": "Earn Bitcoins while using Google Chrome"
+   },
+   "max": {
+      "message": "Max"
+   },
+   "mined": {
+      "message": "Mined:"
+   },
+   "mining": {
+      "message": "Mining:"
+   },
+   "mining_desc": {
+      "message": "Google Chrome must be opened to mine Bitcoin. However, you can close this window and you will continue to mine."
+   },
+   "more": {
+      "message": "More details"
+   },
+   "multiplier_desc": {
+      "message": "Invite people by personal url and earn an additional % of bitcoins they mine. The more your referal network grows, more gain you have."
+   },
+   "multiplier_title": {
+      "message": "Earnings Multiplier"
+   },
+   "network_desc": {
+      "message": "\u003Cp>In order to use Cryptotab properly, you need to have connection to the internet.\u003C/p>\u003Cp>Check your network settings and relaunch the browser.\u003C/p>"
+   },
+   "network_title": {
+      "message": "Check your internet connection"
+   },
+   "next_tip": {
+      "message": "Next tip"
+   },
+   "normal": {
+      "message": "Normal"
+   },
+   "off": {
+      "message": "Off"
+   },
+   "rank_bigboss": {
+      "message": "Big Boss"
+   },
+   "rank_expert": {
+      "message": "Expert"
+   },
+   "rank_legend": {
+      "message": "Legend"
+   },
+   "rank_master": {
+      "message": "Master"
+   },
+   "rank_newbie": {
+      "message": "Newbie"
+   },
+   "rank_pro": {
+      "message": "Pro"
+   },
+   "rank_rookie": {
+      "message": "Rookie"
+   },
+   "rank_veteran": {
+      "message": "Veteran"
+   },
+   "rate": {
+      "message": "Rate Us"
+   },
+   "rate_desc": {
+      "message": "If you're happy with CryptoTab, please leave a positive feedback at the Chrome Web Store page."
+   },
+   "rate_title": {
+      "message": "How do you like CryptoTab?"
+   },
+   "refer_new": {
+      "message": "Refer new users and earn much more!"
+   },
+   "referrals": {
+      "message": "Referrals:"
+   },
+   "restart": {
+      "message": "Restart"
+   },
+   "settings": {
+      "message": "Settings"
+   },
+   "skip": {
+      "message": "Skip"
+   },
+   "slide_1": {
+      "message": "\u003Cspan>Invite active friends who will invite their friends - and start making real money!&nbsp;\u003Cb>Earn more than 1 BTC per month!\u003C/b>\u003C/span>"
+   },
+   "slide_2": {
+      "message": "Invest your time and effort inviting new users and you will guarantee a high passive income for yourself for a long time."
+   },
+   "slide_3": {
+      "message": "You will always earn bonuses for your friends and their friends then using CryptoTab!"
+   },
+   "speed": {
+      "message": "Mining Speed:"
+   },
+   "tip_1": {
+      "message": "Here is your current BTC balance with update frequency approx. 10 min."
+   },
+   "tip_2": {
+      "message": "Adjust your mining speed in here, or turn it off altogether at any time."
+   },
+   "tip_3": {
+      "message": "Invite new users by your personal link and rapidly boost your bitcoin income."
+   },
+   "tip_4": {
+      "message": "Log in, withdraw your BTC, adjust settings and more from the side panel."
+   },
+   "tip_5": {
+      "message": "Check how big is your referral network and invite new users to boost your earnings. We recommend you to sign in using your Google or Facebook account to save data."
+   },
+   "tip_6": {
+      "message": "To open main screen press CryptoTab icon in the extension bar."
+   },
+   "tooltip_4dig": {
+      "message": "We add 4 more digits to bitcoin amount to help you see the progress in earnings."
+   },
+   "total": {
+      "message": "Total:"
+   },
+   "users": {
+      "message": "Users"
+   },
+   "withdraw": {
+      "message": "Withdraw BTC"
+   },
+   "no_connection_title": {
+      "message": "It seems you have no internet connection"
+   },
+   "no_connection_text": {
+      "message": "Please, connect to the internet to get access to CryptoTab mining features and your account."
+   }, 
+   "unavailable_title": {
+      "message": "CryptoTab Currently Unavailable"
+   },
+   "unavailable_title_text": {
+      "message": "Sorry for inconvenience, we've got some maintenance works on our backend upstream cluster, please try to connect CryptoTab later."
+   },
+   "offline": {
+      "message": "Offline"
+   }
+}
